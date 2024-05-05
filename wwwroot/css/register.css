@@ -1,0 +1,49 @@
+﻿/* Kiểu dáng cho tiêu đề h1 */
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Kiểu dáng cho các form */
+form {
+    max-width: 400px; /* Đảm bảo form không quá rộng */
+    margin: 0 auto; /* Căn giữa form */
+    padding: 20px; /* Khoảng cách giữa form và các phần tử xung quanh */
+    border: 1px solid #ccc; /* Viền bao quanh form */
+    border-radius: 5px; /* Bo tròn các góc của form */
+    background-color: #f9f9f9; /* Màu nền của form */
+}
+
+/* Kiểu dáng cho nhãn */
+label {
+    display: block; /* Hiển thị nhãn trên một dòng mới */
+    margin-bottom: 5px; /* Khoảng cách giữa các nhãn và trường nhập */
+}
+
+/* Kiểu dáng cho các trường nhập */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Chiều rộng của trường nhập */
+    padding: 10px; /* Khoảng cách bên trong trường nhập */
+    margin-bottom: 10px; /* Khoảng cách giữa các trường nhập */
+    border: 1px solid #ccc; /* Viền bao quanh trường nhập */
+    border-radius: 5px; /* Bo tròn các góc của trường nhập */
+}
+
+/* Kiểu dáng cho nút */
+button[type="submit"] {
+    width: 100%; /* Chiều rộng của nút */
+    padding: 10px; /* Khoảng cách bên trong nút */
+    background-color: #007bff; /* Màu nền của nút */
+    color: #fff; /* Màu văn bản của nút */
+    border: none; /* Không có đường viền */
+    border-radius: 5px; /* Bo tròn các góc của nút */
+    cursor: pointer; /* Con trỏ tay khi di chuột qua nút */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+    /* Hiệu ứng khi di chuột qua nút */
+    button[type="submit"]:hover {
+        background-color: #0056b3; /* Màu nền thay đổi khi di chuột qua */
+    }

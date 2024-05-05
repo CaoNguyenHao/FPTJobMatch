@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - Tìm Việc Làm</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Trong file _Layout.cshtml -->
+    <!-- Các thẻ head khác -->
+    <link rel="stylesheet" href="~/css/home.css" />
+    <style>
+        /* CSS tùy chỉnh */
+        .quick-search {
+            margin-top: 20px;
+        }
+
+            .quick-search table th,
+            .quick-search table td {
+                vertical-align: middle;
+            }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <div class="container">
+                <a href="index.html" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
+                    <h2 class="m-0 text-primary">FPT Job Match</h2>
+                </a>
+                <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                    <div class="navbar-nav p-4 p-lg-0">
+                        <a href="~/Home" class="nav-item nav-link">Home</a>
+                        <a href="~/Job" class="nav-item nav-link">Job List</a>
+                        <a href="~/Candidate" class="nav-item nav-link">Job Status</a>
+                        <partial name="_CompanyMenu" />
+                        <a href="~/About" class="nav-item nav-link">About</a>
+                        <a href="~/Contact" class="nav-item nav-link">Contact</a>
+                        <partial name="_AdminMenu" />
+                        <partial name="_LoginPartial" />
+                    </div>
+                    <a href="" class="nav-item nav-link btn btn-primary rounded-0 py-2 px-4 mx-2 d-none d-lg-block">Post A Job<i class="fa fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Phần nội dung của từng trang con -->
+    @RenderBody()
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">About Us</a></li>
+                        <li><a href="#" class="text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-white">Our Services</a></li>
+                        <li><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white">Terms & Condition</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">About Us</a></li>
+                        <li><a href="#" class="text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-white">Our Services</a></li>
+                        <li><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white">Terms & Condition</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact</h5>
+                    <p class="mb-1"><i class="text-white"></i>123 Street, Da Nang, Viet Nam</p>
+                    <p class="mb-1"><i class="text-white"></i>+012 345 67890</p>
+                    <p class="mb-1"><i class="text-white"></i>FPTJobMatch@fpt.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    &copy; <a class="text-white" href="#"></a>FPT Job Match, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        <a href="#" class="text-white">Home</a>
+                        <a href="#" class="text-white">Cookies</a>
+                        <a href="#" class="text-white">Help</a>
+                        <a href="#" class="text-white">FQAs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="~/lib/popper.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

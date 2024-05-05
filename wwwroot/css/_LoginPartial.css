@@ -1,0 +1,9 @@
+﻿.form-container {
+    margin: auto; /* Đảm bảo form đăng nhập được căn giữa */
+    width: 50%; /* Thiết lập chiều rộng của form */
+    text-align: center; /* Căn giữa các phần tử trong form */
+}
+
+.login-heading {
+    margin-bottom: 20px; /* Khoảng cách từ tiêu đề đến form */
+}

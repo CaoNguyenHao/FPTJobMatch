@@ -1,0 +1,49 @@
+﻿@page "/Admin/Members"
+@model FPTJobMatch.Areas.Admin.Models.ListMemberModel
+@{
+
+    ViewData["Title"] = "List Members ";
+}
+<partial name="_StatusMessage" model="@Model.StatusMessage"></partial>
+
+<table class="table">
+    <a class="btn btn-success btn-sm" asp-page="./Register">Create New Account</a>
+    <tr>
+        <th>
+            User Name
+        </th>
+        <th>
+            Role
+        </th>
+        <th>
+            Reset PassWord
+        </th>
+        <th>
+            Delete Account
+        </th>
+
+    </tr>
+    @foreach (var user in Model.users)
+    {
+        <tr>
+            <td>@user.UserName</td>
+            <td>
+                @if (string.IsNullOrEmpty(user.RoleNames))
+                {
+                    <a class="text-dark" asp-page="./AddRole" asp-route-id="@user.Id">Add Role</a>
+                }
+                else
+                {
+                    <a asp-page="./AddRole" asp-route-id="@user.Id">@user.RoleNames</a>
+                }
+            </td>
+            <td>
+                <a class="btn btn-success btn-sm" asp-page="./SetPassword" asp-route-id="@user.Id">Reset PassWord</a>
+            </td>
+            <td>
+                <a class="btn btn-success btn-sm" asp-page="./DeletePersonalData" asp-route-id="@user.Id">Delete Account</a>
+            </td>
+        </tr>
+    }
+
+</table>

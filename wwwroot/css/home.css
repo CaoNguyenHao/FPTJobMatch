@@ -1,0 +1,27 @@
+﻿/* styles.css */
+
+/* Kiểu dáng cho footer */
+
+.footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    padding: 60px 0;
+}
+
+    /* Kiểu dáng cho phần container bên trong footer */
+    .footer .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Kiểu dáng cho phần bản quyền */
+    .footer .copyright {
+        text-align: left;
+    }
+
+    /* Kiểu dáng cho phần menu trong footer */
+    .footer .footer-menu {
+        text-align: right;
+    }
+    /* styles.css */
+

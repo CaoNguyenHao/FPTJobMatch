@@ -1,0 +1,54 @@
+﻿/* Filter */
+.filter {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+    .filter a {
+        display: inline-block;
+        margin-right: 10px;
+        padding: 8px 16px;
+        text-decoration: none;
+        color: #333;
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+        .filter a:hover {
+            background-color: #e0e0e0;
+        }
+
+ CSS cho ảnh 
+.img-fluid {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  Thêm đường viền xung quanh hình ảnh 
+    width: 90%;  Đảm bảo ảnh chiếm toàn bộ chiều rộng của phần tử cha 
+    height: 70%;  Cho phép tự động điều chỉnh chiều cao của ảnh 
+}
+
+/* Job List */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f5f5f5;
+}
+
+.job-item {
+    transition: background-color 0.3s;
+}
+
+    .job-item:hover {
+        background-color: #f0f0f0;
+    }
